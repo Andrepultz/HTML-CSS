@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label> <!-- usando o input para colocar texto qualquer caracter-->
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="nome">
+        </p>
+        <p>
+            <label for="imedia">Média</label><!-- usando o input para colocar somente números-->
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1">
+        </p>
+        <p>
+            <label for="imes">Período letivo</label><!-- usando o input para colocar mês e ano-->
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="idata">Data da prova</label><!-- usando o input para colocar somente data-->
+            <input type="date" name="data" id="idata">
+        </p>
+        <label for="ihora">Horário da prova</label><!-- usando o input para colocar hora-->
+        <input type="time" name="hora" id="ihora">
+        <p>
+            <input type="submit" value="Enviar"><!-- usando o input para enviar formulário-->
+            <input type="reset" value="Limpar"><!-- usando o input para limpar o formulário-->
+        </p>
+    </form>
+</body>
+</html>
