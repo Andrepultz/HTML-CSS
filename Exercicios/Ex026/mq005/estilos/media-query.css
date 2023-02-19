@@ -9,7 +9,7 @@
    Telas grandes: a partir de 1200px */
 
 @media screen and (min-width: 768px){
-    .material-symbols-outlined{
+    .material-symbols-outlined{   /*Como está no seu código */
         display: none;
     }
 
